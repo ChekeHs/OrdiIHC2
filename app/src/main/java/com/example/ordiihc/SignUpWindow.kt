@@ -60,7 +60,11 @@ class SignUpWindow : AppCompatActivity() {
                     //Toast.makeText(this,"Contraseña 1: ${contrasena.text}\n Contraseña 2: ${verifContrasena.text}", Toast.LENGTH_LONG).show()
                 }
             }
+        }
 
+        cancelar.setOnClickListener {
+            val loginPageIntent= Intent(this,MainActivity::class.java)
+            startActivity(loginPageIntent)
         }
     }
 

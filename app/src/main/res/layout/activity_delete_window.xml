@@ -7,8 +7,12 @@
     tools:context=".deleteWindow">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout7"
+        android:layout_width="283dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="90dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,9 +22,10 @@
         <TextView
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="82dp"
             android:text="¿Seguro que desea eliminar este elemento?"
-            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
@@ -28,13 +33,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:text="Nombre: title" />
+            android:text="Nombre: title"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Descripción: description" />
+            android:text="Descripción: description"
+            android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,18 +51,34 @@
 
             <Button
                 android:id="@+id/eliminar"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="ELIMINAR" />
+                android:backgroundTint="#FF0000"
+                android:text="ELIMINAR"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/cancelar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="CANCELAR" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="132dp"
+        android:layout_weight="1"
+        android:background="#66BB6A"
+        android:text="CANCELAR"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

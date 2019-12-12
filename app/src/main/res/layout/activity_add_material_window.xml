@@ -7,8 +7,12 @@
     tools:context=".addMaterialWindow">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="64dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,9 +22,10 @@
         <TextView
             android:id="@+id/textView18"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="94dp"
             android:text="Ingresa los datos del nuevo material."
-            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
@@ -74,29 +79,40 @@
 
         <EditText
             android:id="@+id/editText3"
+            style="@android:style/Widget.Material.EditText"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:ems="10"
             android:inputType="textMultiLine" />
 
-        <LinearLayout
+        <Button
+            android:id="@+id/agregar"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:text="Agregar"
+            android:textColor="#F2F5F2"
+            android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/agregar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="AGREGAR" />
-
-            <Button
-                android:id="@+id/cancelar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="CANCELAR" />
-        </LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/cancelar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_weight="1"
+        android:background="#D82222"
+        android:text="CANCELAR"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.137" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,9 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".actionConfirm">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_weight="1"
+        android:background="#FF0000"
+        android:text="CANCELAR"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="90dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,8 +39,10 @@
         <TextView
             android:id="@+id/textView24"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="88dp"
             android:text="¿Realmente desea realizar esta acción?"
+            android:textAlignment="center"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
@@ -31,7 +54,7 @@
             android:id="@+id/textView25"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="(Nombre de la acción)"
+            android:text="Accion: Sit Amet"
             android:textStyle="italic" />
 
         <TextView
@@ -43,7 +66,7 @@
             android:id="@+id/textView27"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="(Nombre del material)"
+            android:text="Nombre: Lorem Ipsum"
             android:textStyle="italic" />
 
         <TextView
@@ -55,7 +78,7 @@
             android:id="@+id/textView30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="(Cantidad previa de material)"
+            android:text="Cantidad Anterior: XX"
             android:textStyle="italic" />
 
         <TextView
@@ -67,7 +90,7 @@
             android:id="@+id/textView31"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="(Cantidad nueva de material)"
+            android:text="Cantidad Nueva: XX"
             android:textStyle="italic" />
 
         <TextView
@@ -85,14 +108,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="ACEPTAR" />
+                android:background="#66BB6A"
+                android:text="ACEPTAR"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/cancelar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="CANCELAR" />
         </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
