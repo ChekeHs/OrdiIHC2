@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                     // Do something
                     if(correo.text.toString()==intent.getStringExtra("loginEmail").toString() && contrasena.text.toString()==intent.getStringExtra("password").toString()) {
                         Toast.makeText(this,"Has iniciado sesión correctamente.",Toast.LENGTH_LONG).show()
-                        val listPageIntent= Intent(this,ListadoMateriales::class.java)
+                        val listPageIntent= Intent(this,custom_list::class.java)
                         startActivity(listPageIntent)
                         finish()
 

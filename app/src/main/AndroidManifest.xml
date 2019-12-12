@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListadoMateriales"></activity>
+        <activity android:name=".actionConfirm"></activity>
+        <activity android:name=".addMaterialWindow" />
+        <activity android:name=".quantityEditWindow" />
+        <activity android:name=".deleteWindow" />
+        <activity android:name=".custom_list" />
+        <activity android:name=".logoutWindow" />
         <activity android:name=".SignUpWindow" />
         <activity android:name=".MainActivity">
             <intent-filter>
